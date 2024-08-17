@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rapid Dashboard</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- Select2 plungn -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+	 <!-- custom styling -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-sidebar-size="lg">
+	<header class="fixed-top border">
+		<div class="d-flex align-items-center">
+			<h3 class="flex-shrink-0 rapid-logo">Rapid</h3>
+			<ul class="navbar-nav flex-row rapid-navigation align-items-center ms-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="toggleFullScreen">
+						<i class="bi-arrows-angle-expand"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="bi-bookmark-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Favorite"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end border-0 shadow" style="min-width: 25rem;">
+						<li>
+							<div class="overflow-auto p-3" style="min-height: 300px; max-height: 300px;">
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+								<a href="#" class="d-flex align-items-center text-decoration-none mb-2 bg-primary-subtle text-primary-emphasis p-3 rounded">
+									<div class="flex-shrink-0">
+										<i class="bi-layers fs-4"></i>
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small bi-arrow-right"></span>
+								</a>								
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link position-relative" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="bi-chat-left-text" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Draft"></i>
+						<span class="position-absolute start-50 translate-middle badge rounded-pill text-bg-danger" style="top: -5px;">5 <span class="visually-hidden">unread messages</span></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end border-0 shadow" style="min-width: 20rem;">
+						<li><h5 class="dropdown-header fs-5 text-dark fw-bold">Drafts</h5></li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<div class="overflow-auto p-3" style="min-height: 300px; max-height: 300px;">
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+							</div>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item text-center fw-semibold" href="#">View all drafts</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="bi-bell" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Notification"></i>
+						<span class="position-absolute start-50 translate-middle badge rounded-pill text-bg-danger" style="top: -5px;">3 <span class="visually-hidden">unread messages</span></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end border-0 shadow" style="min-width: 20rem;">
+						<li><h3 class="dropdown-header fs-5 text-dark fw-bold">Notification</h3></li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<div class="overflow-auto p-3" style="min-height: 300px; max-height: 300px;">
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+								<div class="d-flex align-items-center mb-3">
+									<div class="flex-shrink-0">
+										<div class="overflow-hidden rounded-circle bg-primary-subtle" style="width: 50px;height: 50px;"></div>
+									</div>
+									<div class="flex-grow-1 ms-2">
+										<h6 class="mb-0">New Orders</h6>
+										<p class="mb-0 text-black-50 small">You have received new orders</p>
+									</div>
+									<span class="flex-shrink-0 small">1m</span>
+								</div>
+							</div>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item text-center fw-semibold" href="#">View all notification</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<div class="user-menu d-flex align-items-center">
+							<div class="flex-grow-1 d-none d-md-block">
+								<h6 class="text-dark fw-bold mb-0">Muhammad</h6>
+							</div>
+							<div class="flex-shrink-0 ms-2">
+								AM
+							</div>
+						</div>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-person"></i> Edit Profile</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-translate"></i> Change Language</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-lock"></i> Lock Screen</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-key"></i> Change Password</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item text-danger" href="#"><i class="bi-person-walking"></i> Logout</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item rapid-search">
+					<form class="d-flex" role="search">
+						<div class="position-relative" id="searchInput" style="width: 30px;">
+							<input class="form-control" type="search" aria-label="Search">
+							<a href="javascript:void(0)" id="searchExit" class="position-absolute top-50 translate-middle bg-primary-subtle text-primary-emphasis" style="left:15px; display: none;">
+								<i class="bi-x"></i>
+							</a>
+							<a href="javascript:void(0)" id="searchBtn" class="position-absolute top-50 translate-middle end-0">
+								<i class="bi-search"></i>
+							</a>
+							<div class="p-3 bg-white shadow rounded position-absolute top-100 w-100 searchOverlay" style="display: none;z-index: 1100;">
+								<div class="d-flex align-items-center justify-content-between">
+									<a href="#" class="nav-link">
+										<small>AAAAA</small>
+									</a>
+									<a href="#" class="nav-link">
+										<i class="bi-x"></i>
+									</a>
+								</div>
+								<div class="d-flex align-items-center justify-content-between">
+									<a href="#" class="nav-link">
+										<small>ITR</small>
+									</a>
+									<a href="#" class="nav-link">
+										<i class="bi-x"></i>
+									</a>
+								</div>
+								<div class="d-flex align-items-center justify-content-between">
+									<a href="#" class="nav-link">
+										<small>ITR2</small>
+									</a>
+									<a href="#" class="nav-link">
+										<i class="bi-x"></i>
+									</a>
+								</div>
+								<div class="d-flex align-items-center justify-content-between">
+									<a href="#" class="nav-link">
+										<small>ITR2024</small>
+									</a>
+									<a href="#" class="nav-link">
+										<i class="bi-x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</li>
+				<li class="nav-item dropdown position-static">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="bi-grid-3x3-gap-fill fs-5"></i>
+					</a>
+					<ul class="dropdown-menu border-0 shadow mega-menu container">
+						<div class="p-3">
+							<div class="d-flex overflow-auto gap-3 " style="height: 200px;">
+								<div class="col-2">
+									<h6 class="fw-bold">POS</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Sales</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Estimates <span class="text-primary float-end">2</span></a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Invoice <span class="text-primary float-end">2</span></a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Credit Notes <span class="text-primary float-end">2</span></a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Purchase</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Inventory</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Payroll</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">FAM</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Finance</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">DMS</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">eCommerce</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+								<div class="col-2">
+									<h6 class="fw-bold">Administrator</h6>
+									<a class="text-decoration-none d-block text-secondary" href="#">Action</a>
+									<a class="text-decoration-none d-block text-secondary" href="#">Another action</a>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="content">
+		<aside class="rapid-sidebar" id="#rapidSidebar">
+			<a href="javascript:void(0)" class="btn-toggle" id="toggleButton">
+				<i class="bi-chevron-left"></i>
+			</a>
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<i class="bi-speedometer2"></i>
+						<span class="d-block">Dashboard</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-people"></i>
+						<span class="d-block">Customers</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow bg-theme2" style="min-width: 15rem">
+						<li><a class="dropdown-item" href="index.html"><i class="bi-dot"></i> Currency</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Customer Groups <span class="badge bg-info float-end">2</span></a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Customer <span class="badge bg-info float-end">10</span></a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-person-plus"></i>
+						<span class="d-block">Members</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-bookmark"></i>
+						<span class="d-block">Article</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Article Groups</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Articles</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-tags"></i>
+						<span class="d-block">Tags</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-graph-up"></i>
+						<span class="d-block">Leads</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Lead Status</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Lead Sources</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Lead</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-collection"></i>
+						<span class="d-block">Projects</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-list-check"></i>
+						<span class="d-block">Task</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-ticket"></i>
+						<span class="d-block">Tickets</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Ticket Priorities</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Ticket Status</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Predefined Replies</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Tickets</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-currency-dollar"></i>
+						<span class="d-block">Sales</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Invoices</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Credit Notes</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Proposals</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Estimates</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Invoice Payments</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-buildings"></i>
+						<span class="d-block">Departments</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-ticket"></i>
+						<span class="d-block">Expanses</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Expense Categories</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Expenses</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-credit-card-2-front"></i>
+						<span class="d-block">Payment Modes</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-list-check"></i>
+						<span class="d-block">Tax Rates</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-megaphone"></i>
+						<span class="d-block">Announcements</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-layers"></i>
+						<span class="d-block">Products</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Products</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Product Groups</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown dropend">
+					<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi-card-checklist"></i>
+						<span class="d-block">Contracts</span>
+					</a>
+					<ul class="dropdown-menu border-0 shadow">
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Contract </a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-dot"></i> Contract Types</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-bullseye"></i>
+						<span class="d-block">Goals</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-boxes"></i>
+						<span class="d-block">Services</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-gear"></i>
+						<span class="d-block">Settings</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-globe"></i>
+						<span class="d-block">Countries</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-bag-check"></i>
+						<span class="d-block">Activity Log</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="bi-translate"></i>
+						<span class="d-block">Translation Manager</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+		<main class="p-4 flex-grow-1">
+			<!-- <div class="bg-body-tertiary rounded p-2 mb-4 text-center">
+				<div class="btn-group rounded-pill">
+					<button type="button" class="btn btn-primary btn-theme rounded-pill rounded-end">Primary</button>
+					<button type="button" class="btn btn-primary btn-theme dropdown-toggle dropdown-toggle-split rounded-pill rounded-start"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="#"><i class="bi-plus text-theme"></i> Add</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-pencil text-theme"></i> Edit</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-trash3 text-theme"></i> Delete</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-theme rounded-pill rounded-end">Success</button>
+					<button type="button" class="btn btn-primary btn-theme dropdown-toggle dropdown-toggle-split rounded-pill rounded-start"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="#"><i class="bi-plus text-theme"></i> Add</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-pencil text-theme"></i> Edit</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-trash3 text-theme"></i> Delete</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-theme rounded-pill rounded-end">Info</button>
+					<button type="button" class="btn btn-primary btn-theme dropdown-toggle dropdown-toggle-split rounded-pill rounded-start"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="#"><i class="bi-plus text-theme"></i> Add</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-pencil text-theme"></i> Edit</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-trash3 text-theme"></i> Delete</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-theme rounded-pill rounded-end">Warning</button>
+					<button type="button" class="btn btn-primary btn-theme dropdown-toggle dropdown-toggle-split rounded-pill rounded-start"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="#"><i class="bi-plus text-theme"></i> Add</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-pencil text-theme"></i> Edit</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-trash3 text-theme"></i> Delete</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-theme rounded-pill rounded-end">Danger</button>
+					<button type="button" class="btn btn-primary btn-theme dropdown-toggle dropdown-toggle-split rounded-pill rounded-start"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><a class="dropdown-item" href="#"><i class="bi-plus text-theme"></i> Add</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-pencil text-theme"></i> Edit</a></li>
+						<li><a class="dropdown-item" href="#"><i class="bi-trash3 text-theme"></i> Delete</a></li>
+					</ul>
+				</div>
+			</div> -->
+			<div class="container-fluid">
+				<div class="bg-primary-subtle rounded mb-4 p-2">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<div class="hstack align-items-center">
+								<div class="flex-shrink-0">
+									<i class="bi-youtube fs-3" data-bs-toggle="modal" data-bs-target="#youtubeModal"></i>
+								</div>
+								<h6 class="ms-3 mb-0 fw-semibold">Listing Currency</h6>
+							</div>
+						</div>
+						<div class="col-lg-3 mx-auto">
+							<div class="company-select">
+								<select class="form-control" name="state">
+									<option value="AL">Rapid Software LLC</option>
+									<option value="WY">Rapid Computer LLC</option>
+									<option value="WY">Rapid</option>
+									<option value="WY">Abdul</option>
+									<option value="WY">Manan</option>
+									<option value="WY">Jahngir</option>
+									<option value="WY">Bangla</option>
+								</select>
+								<button class="btn ms-auto" id="companySelctBtn"><i class="bi-chevron-down"></i></button>
+								<div class="p-3 bg-white shadow rounded position-absolute top-100 w-100 companySearchOverlay" style="display: none;z-index: 1100;">
+									<input type="search" class="form-control border mb-4" placeholder="search..."/>
+									<p class="mb-2">Bangla</p>
+									<p class="mb-2">Rapid Software LLC</p>
+									<p class="mb-2">Rapid Computers</p>
+									<p class="mb-2">Rapid</p>
+									<p class="mb-2">Abdul</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 text-lg-end">
+							<div class="btn-group">
+								<a href="add.html" class="btn btn-theme btn-primary rounded-pill rounded-end btn-submit">Add</a>
+								<button type="button" class="btn btn-theme btn-primary dropdown-toggle dropdown-toggle-split rounded-pill rounded-start border-start" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="visually-hidden">Toggle Dropdown</span>
+								</button>
+								<!-- <button class="btn bg-primary-subtle border-0 rounded text-primary-emphasis dropdown-menu text-light" style="text-align: center; min-width: 6.2rem;">
+									PDF
+								</button> -->
+								<ul class="dropdown-menu bg-primary-subtle border-0">
+									<li><a class="dropdown-item" href="#"><i class="bi-question"></i> Help</a></li>
+								  </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid mb-5">
+				<div class="row">
+					<div class="col-lg-3">
+						<label class="btn bg-primary-subtle text-primary-emphasis dropdown-toggle mb-0" id="importBtn">Import 
+							<input type="file" class="form-control d-none" id="file" name="file"
+								required>
+						</label>
+						
+						<a class="btn bg-primary-subtle text-primary-emphasis dropdown-toggle mb-0" id="visibilityBtn" data-bs-toggle="dropdown" aria-expanded="false" style="display: none;">Visibility</a>
+						<ul class="dropdown-menu shadow p-3">
+							<div class="position-relative mb-4">
+								<input type="search" class="form-control pe-5" placeholder="Search...">
+								<a href="#" class="text-decoration-none position-absolute translate-middle top-50 end-0 me-3">
+									<i class="bi-search"></i>
+								</a>
+							</div>
+							<div class="overflow-auto" style="height: 200px;">
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Select All</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Code</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Currency</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Default</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Country</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Symbols</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Exchange</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Status</span>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="form-check ms-2">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+										<label class="form-check-label" for="flexCheckDefault"></label>
+									</div>
+									<span class="flex-grow-1 ms-2">Actions</span>
+								</div>
+							</div>
+							<li><hr class="dropdown-divider"></li>
+							<li class="text-end"><a class="btn btn-theme2" href="#">Reset</a></li>
+						</ul>
+						<div class="btn-group">
+							<a href="add.html" class="btn btn-theme btn-primary rounded-pill rounded-end btn-submit">Export</a>
+							<button type="button" class="btn btn-theme btn-primary dropdown-toggle dropdown-toggle-split rounded-pill rounded-start border-start" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="visually-hidden">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#"><i class="bi-file-earmark-excel text-theme"></i>
+										Excel</a></li>
+								<li><a class="dropdown-item" href="#"><i class="bi-file-earmark-pdf text-theme"></i> PDF</a>
+								</li>
+								<li><a class="dropdown-item" href="#"><i class="bi-filetype-csv text-theme"></i> CSV</a>
+								</li>
+								<li><a class="dropdown-item" href="#"><i class="bi-printer text-theme"></i> Print</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 mx-auto">
+						<form action="">
+							<div class="position-relative">
+								<input type="search" class="form-control rounded-pill bg-light pe-5" placeholder="Search...">
+								<a href="#" class="text-decoration-none position-absolute translate-middle top-50 end-0 me-3">
+									<i class="bi-search"></i>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3 text-lg-end">
+						<button type="button" class="btn bg-primary-subtle text-primary-emphasis" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<i class="bi-funnel"></i>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end shadow p-3">
+							<div class="position-relative mb-4">
+								<input type="search" class="form-control pe-5" placeholder="Search...">
+								<a href="#" class="text-decoration-none position-absolute translate-middle top-50 end-0 me-3">
+									<i class="bi-search"></i>
+								</a>
+							</div>
+							<div class="overflow-auto" style="height: 200px;">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										Select All
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										2
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										5
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										10
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										15
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										20
+									</label>
+								</div>
+							</div>
+							<li><hr class="dropdown-divider"></li>
+							<li class="text-end"><a class="btn btn-theme2" href="#">Reset</a></li>
+						</ul>
+						<button type="button" class="btn bg-primary-subtle text-primary-emphasis"  id="listToggleBtn">
+							<i class="bi-list-ul"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="listView">
+				<div class="card-container mb-4 container-fluid">
+					<div class="table-responsive">
+						<table class="table table-borderless table-list table-hover">
+							<thead>
+								<tr>
+									<th>Code
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3" style="min-width: 15rem;">
+												<div class="d-flex align-items-center">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+														<label class="form-check-label" for="flexRadioDefault1">
+														  Assending
+														</label>
+													</div>
+													<i class="bi-arrow-up ms-auto"></i>
+												</div>
+												<div class="d-flex align-items-center">
+													<div class="form-check">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+														<label class="form-check-label" for="flexRadioDefault2">
+														  Descending
+														</label>
+													</div>
+													<i class="bi-arrow-down ms-auto"></i>
+												</div>
+												<div class="position-relative mt-2 mb-3">
+													<input type="search" class="form-control pe-3" placeholder="Search...">
+													<a href="#" class="text-decoration-none position-absolute translate-middle top-50 end-0">
+														<i class="bi-search"></i>
+													</a>
+												</div>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+												<li><hr class="dropdown-divider"></li>
+												<li class="text-end"><a class="btn btn-theme2" href="#">Reset</a></li>
+											</ul>
+										</div>
+									</th>
+									<th>Currency 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th>Default 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th>Country 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th>Symbol 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th>Exchange 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th class="text-center">Status 
+										<div class="dropdown d-inline-block">
+											<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+												<i class="bi-funnel"></i>
+											</a>
+											<ul class="dropdown-menu shadow p-3">
+												<input type="search" class="form-control border mb-4" placeholder="search..."/>
+												<div class="overflow-auto" style="height: 200px;">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															Select All
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															2
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															5
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															10
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															15
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+														<label class="form-check-label" for="flexCheckDefault">
+															20
+														</label>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</th>
+									<th class="text-center">Action</th>
+								</tr>
+							</thead>
+						
+							<tbody>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo1"><i class="bi-chevron-right"></i> 109</button>
+									</td>
+									<td>Carlos</td>
+									<td>Mathias</td>
+									<td>Leme</td>
+									<td>SP</td>
+									<td>new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<a href="view.html" class="text-decoration-none d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+						
+								<tr>
+									<td colspan="8" class="p-0">
+										<div class="accordion-collapse collapse bg-primary bg-opacity-10 border rounded" id="demo1">
+											<form action="" class="px-3 py-4" style="height: 250px; overflow-y: auto;">
+												<div class="row">
+													<div class="col-md-3 mb-4">
+														<label for="" class="hover-lable d-block fw-semibold">Code 
+															<a href="#" class="text-theme float-end" data-bs-toggle="modal" data-bs-target="#templateModal">Template</a>
+														</label>
+														<input type="search" class="form-control" />
+													</div>
+													<div class="col-md-6 mb-4">
+														<label for="" class="hover-lable d-block fw-semibold">Name 
+															<a href="#" class="text-theme float-end" data-bs-toggle="modal" data-bs-target="#languageModal">Language</a>
+														</label>
+														<input type="search" class="form-control" />
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="" class="d-block">Default</label>
+														<div class="form-check form-switch form-check-inline">
+															<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+														</div>
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="" class="d-block">Inactive</label>
+														<div class="form-check form-switch form-check-inline">
+															<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+														</div>
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="" class="d-block">Delete</label>
+														<div class="form-check form-switch form-check-inline">
+															<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+														</div>
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="">Symbol</label>
+														<input type="search" class="form-control">
+													</div>
+													<div class="col-md-3 mb-4">
+														<label for="">Country</label>
+														<select name="" id="" class="form-select">
+															<option value=""></option>
+															<option value="">Brussel</option>
+															<option value="">London</option>
+															<option value="">Madrid</option>
+															<option value="">Paris</option>
+														</select>
+													</div>
+													<div class="col-12 text-end">
+														<a href="add.html" class="btn btn-theme2 px-3">Reset</a>
+														<a href="add.html" class="btn btn-theme btn-primary">Update</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</td>
+								</tr>
+						
+						
+						
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="8" class="p-0">
+										<div id="demo2" class="accordion-collapse collapse">Demo2</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo3"><i class="bi-chevron-right"></i> 106</button>
+									</td>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Dracena</td>
+									<td>SP</td>
+									<td> New</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-warning-subtle text-warning-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Draft</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+										
+									</td>
+								</tr>
+								<tr>
+									<td colspan="8" class="p-0">
+										<div id="demo3" class="accordion-collapse collapse">Demo3 sadasdasdasdasdas</div>
+									</td>
+								</tr>
+								<tr>
+									<td data-bs-toggle="collapse" data-bs-target="#demo4" class="accordion-toggle">
+										<button class="btn btn-default btn-sm"><i class="bi-chevron-right"></i> 200</button>
+									</td>
+									<td>John</td>
+									<td>Doe</td>
+									<td>Dracena</td>
+									<td>SP</td>
+									<td> New</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-danger-subtle text-danger-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Delete</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="8" class="p-0">
+										<div id="demo4" class="accordion-collapse collapse">Demo3 sadasdasdasdasdas</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button class="btn btn-default btn-sm" data-bs-toggle="collapse" data-bs-target="#demo2"><i class="bi-chevron-right"></i> 105</button>
+									</td>
+									<td>Silvio</td>
+									<td>Santos</td>
+									<td>São Paulo</td>
+									<td>SP</td>
+									<td> new</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-success-subtle text-success-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Active</span>
+									</td>
+									<td class="text-center"> 
+										<span class="d-inline-block bg-info-subtle text-info-emphasis px-3 rounded-pill fw-semibold badge" style="width: 80px;">Detail</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<div class="hstack gap-2">
+								<button class="btn rounded btn-theme btn-primary px-3">10</button>
+								<button class="btn rounded btn-ouline-theme px-3">25</button>
+								<button class="btn rounded btn-ouline-theme px-3">50</button>
+								<button class="btn rounded btn-ouline-theme px-3">100</button>
+								<div class="dropdown">
+									<button class="btn rounded btn-ouline-theme px-3 dropdown-toggle" type="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										...
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">200</a></li>
+										<li><a class="dropdown-item" href="#">300</a></li>
+										<li><a class="dropdown-item" href="#">500</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center">
+							<h6 class="mb-0 text-black-50">Showing 1-12 of 35 entries</h6>
+						</div>
+						<div class="col-4">
+							<div class="hstack justify-content-end align-items-center">
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-fast-forward-fill text-theme d-inline-block" style="transform: rotate(180deg);"></i>
+								</a>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-play-fill text-theme d-inline-block" style="transform: rotate(180deg);"></i>
+								</a>
+								<div class="d-flex align-items-center mx-3">
+									<span>page</span>
+									<input type="text" class="border mx-2 text-center text-primary-emphasis bg-primary-subtle " value="1" style="width: 35px; height: 35px;border-radius: 50%;">
+									of 3
+								</div>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-play-fill text-theme d-inline-block"></i>
+								</a>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-fast-forward-fill text-theme d-inline-block"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cardView">
+				<div class="card-container mb-4 container-fluid">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+					</div>
+					<div id="cardDemo1" class="accordion-collapse collapse bg-primary bg-opacity-10 border rounded">
+						<form action="" class="px-3 py-4" style="height: 250px; overflow-y: auto;">
+							<div class="row">
+								<div class="col-md-3 mb-4">
+									<label for="" class="hover-lable d-block fw-semibold">Code 
+										<a href="#" class="text-theme float-end" data-bs-toggle="modal" data-bs-target="#templateModal">Template</a>
+									</label>
+									<input type="search" class="form-control" />
+								</div>
+								<div class="col-md-6 mb-4">
+									<label for="" class="hover-lable d-block fw-semibold">Name 
+										<a href="#" class="text-theme float-end" data-bs-toggle="modal" data-bs-target="#languageModal">Language</a>
+									</label>
+									<input type="search" class="form-control" />
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="" class="d-block">Default</label>
+									<div class="form-check form-switch form-check-inline">
+										<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="" class="d-block">Inactive</label>
+									<div class="form-check form-switch form-check-inline">
+										<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="" class="d-block">Delete</label>
+									<div class="form-check form-switch form-check-inline">
+										<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="">Symbol</label>
+									<input type="search" class="form-control">
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="">Country</label>
+									<select name="" id="" class="form-select">
+										<option value=""></option>
+										<option value="">Brussel</option>
+										<option value="">London</option>
+										<option value="">Madrid</option>
+										<option value="">Paris</option>
+									</select>
+								</div>
+								<div class="col-12 text-end">
+									<a href="add.html" class="btn btn-theme2 px-3">Reset</a>
+									<a href="add.html" class="btn btn-theme btn-primary">Update</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 mb-3">
+							<div class="customer-card">
+								<div class="card-actions">
+									<a href="view.html" class="me-2"><i class="bi-eye" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="View"></i></a>
+									<a href="edit.html"><i class="bi-pencil" data-bs-custom-class="rapid-tooltip" data-bs-toggle="tooltip"
+											data-bs-placement="top" data-bs-title="Edit"></i></a>					
+								</div>
+								<p class="mb-0">Code</p>
+								<p class="mb-0 fw-bold">AED</p>
+								<h6>
+									<a href="#" class="text-decoration-none accordion-toggle" data-bs-toggle="collapse" data-bs-target="#cardDemo1">
+										<i class="bi-chevron-right"></i>
+									</a>
+									<a href="view.html" class="h5">United Arab Emirates</a>
+								</h6>
+								<p class="mb-0">Symbol  <span class="float-end">Country </span></p>
+								<p class="mb-0">DH <span class="float-end">UAE</span></p>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<select name="" id="" class="form-select flex-shrink-0 rounded-0" style="width: 150px;">
+								<option value="">12 per page</option>
+								<option value="">24 per page</option>
+								<option value="">48 per page</option>
+								<option value="">96 per page</option>
+							</select>
+						</div>
+						<div class="col-4 text-center">
+							<h6 class="mb-0 text-black-50">Showing 1-12 of 35 entries</h6>
+						</div>
+						<div class="col-4">
+							<div class="hstack justify-content-end align-items-center">
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-fast-forward-fill text-theme d-inline-block" style="transform: rotate(180deg);"></i>
+								</a>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-play-fill text-theme d-inline-block" style="transform: rotate(180deg);"></i>
+								</a>
+								<div class="d-flex align-items-center mx-3">
+									<span>page</span>
+									<input type="text" class="border mx-2 text-center text-primary-emphasis bg-primary-subtle " value="1" style="width: 35px; height: 35px;border-radius: 50%;">
+									of 3
+								</div>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-play-fill text-theme d-inline-block"></i>
+								</a>
+								<a href="#" class="text-decoration-none px-2">
+									<i class="bi-fast-forward-fill text-theme d-inline-block"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<!-- Delete Modal -->
+	<div class="modal fade" id="deleteCardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body text-center py-5">
+					<h4 class="fw-semibold mb-4">Do you really want to delete?</h4>
+					<button type="button" class="btn btn-danger">Yes, delete it</button>
+					<button type="button" class="btn btn-success" data-bs-dismiss="modal">No, keep it</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Edit Modal -->
+	<div class="modal fade" id="editCardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body text-center py-5">
+					<h4 class="fw-semibold mb-4">Do you really want to Edit?</h4>
+					<button type="button" class="btn btn-danger">Yes, delete it</button>
+					<button type="button" class="btn btn-success" data-bs-dismiss="modal">No, keep it</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Youtube Modal -->
+	<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="ratio ratio-16x9">
+						<iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	 <script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+		//Enable tooltip
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+		const searchInput = document.getElementById('searchInput');
+		const searchButton = document.getElementById('searchBtn');
+		const searchExit = document.getElementById('searchExit');
+		searchButton.addEventListener('click', function () {
+			if (searchInput.style.width === '30px') {
+				searchInput.style.width = '300px';
+				searchInput.focus();
+				searchExit.style.display = 'block';
+			} 
+		});
+		searchExit.addEventListener('click', function () {
+			if(searchInput.style.width === '300px'){
+				searchInput.style.width = '30px';
+				searchExit.style.display = 'none';
+			}
+		});
+
+		function updateSidebarSize() {
+			const bodyElement = $('body');
+			const currentSize = bodyElement.attr('data-sidebar-size');
+
+			// Check the window width
+			if ($(window).width() < 768) {
+				if (currentSize !== 'sm') {
+					bodyElement.attr('data-sidebar-size', 'sm');
+					$('#toggleButton i').removeClass('bi-chevron-left').addClass('bi-chevron-right');
+				}
+
+			} else {
+				// Reset to 'lg' if needed (adjust as per your initial setup)
+				if (currentSize !== 'lg') {
+					bodyElement.attr('data-sidebar-size', 'lg');
+					$('#toggleButton i').removeClass('bi-chevron-right').addClass('bi-chevron-left');
+
+				}
+			}
+		}
+		function toggleFullscreen() {
+			const doc = document.documentElement;
+			if (!document.fullscreenElement) {
+				doc.requestFullscreen();
+				$('#toggleFullScreen i').removeClass('bi-arrows-angle-expand').addClass('bi-arrows-angle-contract');
+			} else if (document.exitFullscreen) {
+				document.exitFullscreen();
+				$('#toggleFullScreen i').removeClass('bi-arrows-angle-contract').addClass('bi-arrows-angle-expand');
+			}
+		}
+		$(document).ready(function(){
+			updateSidebarSize();
+			// Check on resize
+			$(window).resize(function() {
+				updateSidebarSize();
+			});
+
+
+			$('#toggleButton').click(function() {
+				const bodyElement = $('body');
+				const currentSize = bodyElement.attr('data-sidebar-size'); // Use attr to get the latest value
+				const iconElement = $('#toggleButton i');
+				
+				// Toggle the sidebar size and icon
+				if (currentSize === 'lg') {
+					bodyElement.attr('data-sidebar-size', 'sm');
+					iconElement.removeClass('bi-chevron-left').addClass('bi-chevron-right');
+				} else {
+					bodyElement.attr('data-sidebar-size', 'lg');
+					iconElement.removeClass('bi-chevron-right').addClass('bi-chevron-left');
+				}
+			});
+
+			$('#toggleFullScreen').click(function() {
+				toggleFullscreen();
+			});
+			$('.js-company-select2').select2();
+			$('#listToggleBtn').click(function(){
+				if($('#listView').css('display') === 'none'){
+					$('#listView').show();
+					$('#cardView').hide();
+					$('#listToggleBtn i').removeClass('bi-list-ul').addClass('bi-grid-fill');
+					$('#importBtn').hide();
+					$('#visibilityBtn').show();
+				}else{
+					$('#listView').hide();
+					$('#cardView').show();
+					$('#listToggleBtn i').removeClass('bi-grid-fill').addClass('bi-list-ul');
+					$('#importBtn').show();
+					$('#visibilityBtn').hide();
+				}
+			});
+			$('#searchInput input').focus(function(){
+				$('.searchOverlay').show();
+			});
+			$('#searchInput input').blur(function(){
+				$('.searchOverlay').hide();
+			});
+			$('#companySelctBtn').click(function(){
+				if($('.companySearchOverlay').css('display')=== 'none'){
+					$('.companySearchOverlay').show();
+				}else{
+					$('.companySearchOverlay').hide();
+				}
+			});
+		})
+	</script>
+</body>
+
+</html>
